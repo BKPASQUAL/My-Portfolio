@@ -6,7 +6,7 @@ import { Button } from "@material-tailwind/react";
 function Home() {
   return (
     <div>
-        <Navbar />
+        <Navbar/>
         <HeroSection/>        
     </div>
   )
