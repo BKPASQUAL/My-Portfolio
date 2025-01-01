@@ -32,11 +32,12 @@ function HeroSection() {
           <h1 className="text-4xl font-bold mb-6 text-black">
             Full Stack Developer
           </h1>
-          <p className="text-black text-xl mb-10">
+          <p className="text-secondaryText text-xl mb-10">
             I’m passionate about learning and growing as a developer, with a
             love for coding and creating impactful projects. Outside work, I
             enjoy cricket and unwinding with Netflix. Skilled in{" "}
-            <b>JavaScript</b> and the <b>MERN stack</b>, I’m excited to keep
+            <b className="text-black">JavaScript</b> and the{" "}
+            <b className="text-black">MERN stack</b>, I’m excited to keep
             evolving in the world of software engineering. Let's connect!
           </p>
           <div className="flex space-x-6">
@@ -65,6 +66,12 @@ function HeroSection() {
               <FaWhatsapp size={35} style={{ color: "#25D366" }} />
             </button>
           </div>
+          {/* <button
+            className="bg-navy text-white px-8 py-3 mt-8 rounded-lg font-semibold shadow-md hover:shadow-lg hover:bg-highlight transition-all duration-300"
+            title="Download Resume"
+          >
+            Download CV
+          </button> */}
         </div>
 
         <div className="w-1/2 flex justify-end items-center">
