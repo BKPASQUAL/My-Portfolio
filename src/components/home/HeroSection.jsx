@@ -42,25 +42,25 @@ function HeroSection() {
           </p>
           <div className="flex space-x-6">
             <button
-              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-110 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
+              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
               title="LinkedIn"
             >
               <FaLinkedin size={35} style={{ color: "#0A66C2" }} />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-110 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
+              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
               title="Facebook"
             >
               <FaGithub size={35} style={{ color: "#1877F2" }} />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-110 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
+              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
               title="Instagram"
             >
               <FaEnvelope size={35} style={{ color: "#D44638" }} />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-110 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
+              className="flex items-center bg-white p-4 shadow-xl border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
               title="WhatsApp"
             >
               <FaWhatsapp size={35} style={{ color: "#25D366" }} />
