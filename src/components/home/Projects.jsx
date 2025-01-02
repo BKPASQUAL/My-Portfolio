@@ -1,23 +1,26 @@
 import React from "react";
+import ProjectData from "../../assets/data/ProjectsData";    
 
 function Projects() {
   return (
-    <div className="bg-bgcolour text-black px-72  py-28">
-      <div className="text-5xl font-extrabold text-center mb-20">My Projects</div>
-      <div className="flex flex-row  justify-center w-full space-x-8">
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
+    <div className="bg-bgcolour text-black px-72 py-28">
+      <div className="text-5xl font-extrabold text-center mb-20">
+        My Projects
       </div>
-      <div className="flex flex-row  justify-center w-full space-x-8 mt-8">
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
-      </div>
-      <div className="flex flex-row  justify-center w-full space-x-8 mt-8">
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
-        <div className="bg-white w-1/3 h-72 shadow-lg px-6 py-8 flex flex-col items-center justify-center rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointerr"></div>
+      <div className="grid grid-cols-3 gap-8">
+        <div className="bg-white w-full h-autp shadow px-6 py-8 flex flex-col  rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointer">
+          <img
+            src={ProjectData.images[0]}
+            alt="Project image"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <div className="text-xl flex justify-start font-bold">
+            {ProjectData.title}
+          </div>
+          <div className="mt-1 text-secondaryText">
+            {ProjectData.shortDescription}
+          </div>
+        </div>
       </div>
     </div>
   );

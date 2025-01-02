@@ -35,7 +35,7 @@ function Education() {
       <div className="text-5xl font-extrabold text-center mb-20">
         Education
       </div>
-      <VerticalTimeline lineColor="black"  animate={false}>
+      <VerticalTimeline lineColor="navy"  animate={false}>
         {education.map((edu, index) => (
           <VerticalTimelineElement
             key={index}
@@ -49,7 +49,7 @@ function Education() {
             contentArrowStyle={{ borderRight: "none" }}
             date={edu.year}
             iconStyle={{
-              background: "black",
+              background: "navy",
               color: "#fff",
               boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
             }}
