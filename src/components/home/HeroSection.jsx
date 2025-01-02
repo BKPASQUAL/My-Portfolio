@@ -1,7 +1,5 @@
 import React from "react";
 import img from "../../assets/images/dommy-image.jpg";
-import Divider from "@mui/material/Divider";
-
 import {
   FaLinkedin,
   FaFacebook,
@@ -10,7 +8,6 @@ import {
   FaEnvelope,
   FaGithub,
 } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
 
 function HeroSection() {
   return (
@@ -21,13 +18,6 @@ function HeroSection() {
             <span className="text-black">Hey, I'M </span>
             <span className="text-navy">Bawantha Pasqual</span>
           </h1>
-
-          {/* <div className="flex items-center mb-4">
-            <SiMongodb size={35} style={{ color: "#47A248", marginRight: "10px" }} />
-            <SiExpress size={35} style={{ color: "#000000", marginRight: "10px" }} />
-            <SiReact size={35} style={{ color: "#61DBFB", marginRight: "10px" }} />
-            <SiNodedotjs size={35} style={{ color: "#43853D", marginRight: "10px" }} />
-          </div> */}
 
           <h1 className="text-4xl font-bold mb-6 text-black">
             Full Stack Developer
@@ -42,36 +32,42 @@ function HeroSection() {
           </p>
           <div className="flex space-x-6">
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
               title="LinkedIn"
             >
-              <FaLinkedin size={35} style={{ color: "#0A66C2" }} />
+              <FaLinkedin
+                size={35}
+                className="transition-colors duration-250 text-[#0A66C2] group-hover:text-white"
+              />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
-              title="Facebook"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
+              title="GitHub"
             >
-              <FaGithub size={35} style={{ color: "#1877F2" }} />
+              <FaGithub
+                size={35}
+                className="transition-colors duration-250 text-[#171515] group-hover:text-white"
+              />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
-              title="Instagram"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
+              title="Email"
             >
-              <FaEnvelope size={35} style={{ color: "#D44638" }} />
+              <FaEnvelope
+                size={35}
+                className="transition-colors duration-250 text-[#D44638] group-hover:text-white"
+              />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-black"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
               title="WhatsApp"
             >
-              <FaWhatsapp size={35} style={{ color: "#25D366" }} />
+              <FaWhatsapp
+                size={35}
+                className="transition-colors duration-250 text-[#25D366] group-hover:text-white"
+              />
             </button>
           </div>
-          {/* <button
-            className="bg-navy text-white px-8 py-3 mt-8 rounded-lg font-semibold shadow-md hover:shadow-lg hover:bg-highlight transition-all duration-300"
-            title="Download Resume"
-          >
-            Download CV
-          </button> */}
         </div>
 
         <div className="w-1/2 flex justify-end items-center">
@@ -82,7 +78,6 @@ function HeroSection() {
           />
         </div>
       </div>
-      
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { Button } from "@material-tailwind/react";
 import Skills from '../home/Skills';
 import Projects from '../home/Projects';
 import WorkExperience from '../home/WorkExperience';
+import Education from '../home/Education';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         <Skills/>     
         <Projects/>     
         <WorkExperience/>     
+        <Education/>     
     </div>
   )
 }
