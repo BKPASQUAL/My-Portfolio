@@ -17,7 +17,7 @@ module.exports = withMT({
         highlight: "#3498DB",
         buttonText: "#FFFFFF",
         buttonHover: "#1A5276",
-        navy: "#1F3A93",
+        navy: "#3572EF",
         crimson: "#E74C3C",
         mustard: "#F1C40F",
         emerald: "#2ECC71",
