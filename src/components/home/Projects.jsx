@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectData from "../../assets/data/ProjectsData";    
+import ProjectData from "../../assets/data/ProjectsData";
 
 function Projects() {
   return (
@@ -8,19 +8,25 @@ function Projects() {
         My Projects
       </div>
       <div className="grid grid-cols-3 gap-8">
-        <div className="bg-white w-full h-autp shadow px-6 py-8 flex flex-col  rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointer">
-          <img
-            src={ProjectData.images[0]}
-            alt="Project image"
-            className="w-full h-48 object-cover rounded-md mb-4"
-          />
-          <div className="text-xl flex justify-start font-bold">
-            {ProjectData.title}
+        {/* Loop through each project in ProjectData */}
+        {ProjectData.map((project) => (
+          <div
+            key={project.title}
+            className="bg-white w-full h-auto shadow px-6 py-8 flex flex-col rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group cursor-pointer"
+          >
+            <img
+              src={project.images[0]} // Display the first image of the project
+              alt="Project image"
+              className="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <div className="text-xl flex justify-start font-bold group-hover:text-navy">
+              {project.title}
+            </div>
+            <div className="mt-1 text-secondaryText">
+              {project.shortDescription}
+            </div>
           </div>
-          <div className="mt-1 text-secondaryText">
-            {ProjectData.shortDescription}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
