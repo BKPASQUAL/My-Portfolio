@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/images/dommy-image.jpg";
+import img from "../../assets/images/School_dp.jpg";
 import {
   FaLinkedin,
   FaFacebook,

@@ -6,7 +6,7 @@ import AnimatedCursor from "react-animated-cursor";
 function App() {
   return (
     <>
-      <AnimatedCursor  />
+      <AnimatedCursor />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
