@@ -3,7 +3,6 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava, FaAws } from "reac
 import { SiMongodb, SiExpress, SiMysql, SiRedux, SiTailwindcss, SiSequelize, SiFigma, SiC } from "react-icons/si";
 import { AiOutlineApi } from "react-icons/ai"; 
 
-
 function Skills() {
   const icons = [
     { Icon: FaHtml5, name: "HTML", color: "#E34F26" },
@@ -22,19 +21,18 @@ function Skills() {
     { Icon: SiFigma, name: "Figma", color: "#F24E1E" },
     { Icon: SiC, name: "C", color: "#1572B6" },
     { Icon: AiOutlineApi, name: "Axios", color: "#5A9FD4" }, 
-
   ];
 
   return (
-    <div className="bg-bgcolourtwo text-black px-72 py-28">
-      <div className="text-5xl font-extrabold text-center mb-20">
+    <div className="bg-bgcolourtwo text-black px-6 md:px-16 lg:px-72 lg:py-28 py-10 md:py-20">
+      <div className="text-3xl md:text-5xl font-extrabold text-center mb-10 md:mb-20">
         My Tech Stack
       </div>
-      <div className="grid grid-cols-8 gap-10 justify-items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 lg:gap-10 gap-6   md:gap-10 justify-items-center">
         {icons.map(({ Icon, name, color }, index) => (
           <div key={index} className="flex flex-col items-center">
-            <Icon size={60} color={color} />
-            <p className="mt-2 text-lg font-semibold">{name}</p>
+            <Icon size={50} md:size={60} color={color} />
+            <p className="mt-2 text-sm md:text-lg font-semibold text-center">{name}</p>
           </div>
         ))}
       </div>

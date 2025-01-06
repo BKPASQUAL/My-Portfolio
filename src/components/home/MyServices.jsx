@@ -68,35 +68,35 @@ const services = [
 
 function MyServices() {
   return (
-    <div className="bg-bgcolour text-black px-72 py-28">
-      <div className="text-5xl font-extrabold text-center">
+    <div className="bg-bgcolour text-black px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-28 lg:px-72">
+      <div className="text-3xl md:text-5xl font-extrabold text-center">
         Areas of Expertise
       </div>
-      <div className="flex flex-col gap-6 p-20">
+      <div className="flex flex-col gap-6 p-4 md:p-10">
         {/* First Section */}
-        <div className="w-full flex gap-6 h-2/3">
-          <div className="w-1/4 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300  hover:scale-105">
+        <div className="flex flex-col lg:flex-row gap-6">
+          <div className="w-full lg:w-1/4 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
             {services[0].icon}
-            <div className="font-bold text-start mt-4 text-xl group-hover:text-white">
+            <div className="font-bold text-start mt-4 text-lg md:text-xl group-hover:text-white">
               {services[0].title}
             </div>
             <p className="text-sm text-gray-500 text-start mt-4 group-hover:text-white">
               {services[0].description}
             </p>
           </div>
-          <div className="w-2/4 flex flex-col gap-6">
-            <div className="h-1/2 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
+          <div className="flex flex-col gap-6 w-full lg:w-2/4">
+            <div className="h-full bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
               {services[4].icon}
-              <div className="font-bold text-start mt-4 text-xl group-hover:text-white">
+              <div className="font-bold text-start mt-4 text-lg md:text-xl group-hover:text-white">
                 {services[4].title}
               </div>
               <p className="text-sm text-gray-500 mt-4 group-hover:text-white">
                 {services[4].description}
               </p>
             </div>
-            <div className="h-1/2 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
+            <div className="h-full bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
               {services[1].icon}
-              <div className="font-bold mt-4 group-hover:text-white">
+              <div className="font-bold text-start mt-4 text-lg md:text-xl group-hover:text-white">
                 {services[1].title}
               </div>
               <p className="text-sm text-gray-500 mt-4 group-hover:text-white">
@@ -104,9 +104,9 @@ function MyServices() {
               </p>
             </div>
           </div>
-          <div className="w-1/4 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
+          <div className="w-full lg:w-1/4 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
             {services[3].icon}
-            <div className="font-bold mt-4 group-hover:text-white">
+            <div className="font-bold text-start mt-4 text-lg md:text-xl group-hover:text-white">
               {services[3].title}
             </div>
             <p className="text-sm text-gray-500 mt-4 group-hover:text-white">
@@ -116,22 +116,22 @@ function MyServices() {
         </div>
 
         {/* Second Section */}
-        <div className="w-full flex gap-6 h-1/3">
-          <div className="w-1/2 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="w-full md:w-1/2 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
             {services[2].icon}
-            <div className="font-bold mt-4 group-hover:text-white">
+            <div className="font-bold text-start mt-4 text-lg md:text-xl group-hover:text-white">
               {services[2].title}
             </div>
             <p className="text-sm text-gray-500 mt-4 group-hover:text-white">
               {services[2].description}
             </p>
           </div>
-          <div className="w-1/2 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
+          <div className="w-full md:w-1/2 bg-white rounded-lg shadow-lg flex flex-col p-8 group hover:bg-navy transition duration-300 hover:scale-105">
             {services[5].icon}
-            <div className="font-bold mt-4 text-black group-hover:text-white">
+            <div className="font-bold text-start mt-4 text-lg md:text-xl group-hover:text-white">
               {services[5].title}
             </div>
-            <p className="text-sm text-gray-400 mt-4 group-hover:text-white">
+            <p className="text-sm text-gray-500 mt-4 group-hover:text-white">
               {services[5].description}
             </p>
           </div>

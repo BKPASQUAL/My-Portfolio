@@ -32,7 +32,7 @@ function HeroSection() {
           </p>
           <div className="flex space-x-6">
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
               title="LinkedIn"
             >
               <FaLinkedin
@@ -41,7 +41,7 @@ function HeroSection() {
               />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
               title="GitHub"
             >
               <FaGithub
@@ -50,7 +50,7 @@ function HeroSection() {
               />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
               title="Email"
             >
               <FaEnvelope
@@ -59,7 +59,7 @@ function HeroSection() {
               />
             </button>
             <button
-              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
+              className="flex items-center bg-white p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
               title="WhatsApp"
             >
               <FaWhatsapp
