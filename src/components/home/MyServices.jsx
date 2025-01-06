@@ -68,7 +68,7 @@ const services = [
 
 function MyServices() {
   return (
-    <div className="bg-bgcolour text-black px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-28 lg:px-72">
+    <div className="bg-bgcolour text-black px-6 md:px-16  py-10 md:py-16 lg:py-28 lg:px-72">
       <div className="text-3xl md:text-5xl lg:mb-12 font-extrabold text-center">
         Areas of Expertise
       </div>
