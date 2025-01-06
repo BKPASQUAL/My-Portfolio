@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768); 
+      setIsMobile(window.innerWidth <= 768);
     };
 
     checkMobile();
@@ -23,7 +23,14 @@ function App() {
 
   return (
     <>
-      {!isMobile && <AnimatedCursor />} 
+      {!isMobile && (
+        <AnimatedCursor
+          color="0, 0, 255"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
+      )}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
