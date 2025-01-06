@@ -5,7 +5,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="h-20 bg-bgcolour fixed top-0 left-0 w-full shadow-md z-50 flex justify-between items-center px-4 md:px-8">
+    <div className="h-20 bg-bgcolour fixed top-0 left-0 w-full shadow-md z-20 flex justify-between items-center px-4 md:px-8">
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <img

@@ -13,15 +13,15 @@ function HeroSection() {
   return (
     <div className="bg-bgcolour text-black px-4 md:px-16 lg:px-72 h-screen flex flex-col-reverse lg:flex-row items-center">
       <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-          <span className="text-black">Hey, I'M </span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 ">
+          <span className="text-black ">Hey, I'M </span>
           <span className="text-navy">Bawantha Pasqual</span>
         </h1>
 
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-black">
           Full Stack Developer
         </h1>
-        <p className="text-secondaryText text-base md:text-lg lg:text-xl mb-10">
+        <p className="text-secondaryText text-base md:text-lg lg:text-xl mb-10 text-justify">
           I’m passionate about learning and growing as a developer, with a
           love for coding and creating impactful projects. Outside work, I
           enjoy cricket and unwinding with Netflix. Skilled in
