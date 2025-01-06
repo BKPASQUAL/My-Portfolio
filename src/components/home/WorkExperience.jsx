@@ -25,7 +25,7 @@ const experiences = [
 
 function WorkExperience() {
   return (
-    <div className="bg-bgcolourtwo text-black px-72 py-28 w-full">
+    <div className="bg-bgcolour text-black px-72 py-28 w-full">
       <div className="text-5xl font-extrabold text-center mb-20">
         Work Experience
       </div>

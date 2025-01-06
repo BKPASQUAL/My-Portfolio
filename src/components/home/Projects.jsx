@@ -3,7 +3,7 @@ import ProjectData from "../../assets/data/ProjectsData";
 
 function Projects() {
   return (
-    <div className="bg-bgcolour text-black px-72 py-28">
+    <div className="bg-bgcolourtwo text-black px-72 py-28">
       <div className="text-5xl font-extrabold text-center mb-20">
         My Projects
       </div>

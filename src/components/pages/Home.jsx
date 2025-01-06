@@ -13,10 +13,10 @@ function Home() {
       <Navbar />
       <HeroSection />
       <Skills />
+      <MyServices/>
       <Projects />
       <WorkExperience />
       <Education />
-      <MyServices/>
     </div>
   );
 }
