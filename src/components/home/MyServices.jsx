@@ -69,7 +69,7 @@ const services = [
 function MyServices() {
   return (
     <div className="bg-bgcolour text-black px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-28 lg:px-72">
-      <div className="text-3xl md:text-5xl font-extrabold text-center">
+      <div className="text-3xl md:text-5xl lg:mb-12 font-extrabold text-center">
         Areas of Expertise
       </div>
       <div className="flex flex-col gap-6 p-4 md:p-10">

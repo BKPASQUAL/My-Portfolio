@@ -31,7 +31,7 @@ function Education() {
   ];
 
   return (
-    <div className="bg-bgcolourtwo text-black pt-28 pb-28">
+    <div className="bg-bgcolour text-black pt-28 pb-28">
       <div className="text-5xl font-extrabold text-center mb-20">
         Education
       </div>

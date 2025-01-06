@@ -25,23 +25,23 @@ const experiences = [
 
 function WorkExperience() {
   return (
-    <div className="bg-bgcolour text-black px-72 py-28 w-full">
-      <div className="text-5xl font-extrabold text-center mb-20">
+    <div className="bg-bgcolour text-black px-4 md:px-16 lg:px-72 py-10 md:py-20 w-full">
+      <div className="text-3xl md:text-5xl font-extrabold text-center mb-10 md:mb-20">
         Work Experience
       </div>
-      <div className="flex space-x-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="p-6 border bg-white border-gray-300 rounded-md shadow-md flex flex-col justify-between w-1/2 transition-transform duration-300 hover:bg-navy group"
+            className="p-6 border bg-white border-gray-300 rounded-md shadow-md flex flex-col justify-between transition-transform duration-300 hover:bg-navy group"
           >
             <div>
-              <div className="flex justify-between">
+              <div className="flex justify-between items-center mb-4">
                 <div>
-                  <h2 className="text-2xl font-bold transition-colors duration-300 group-hover:text-white">
+                  <h2 className="text-xl md:text-2xl font-bold transition-colors duration-300 group-hover:text-white">
                     {exp.title}
                   </h2>
-                  <p className="text-navy text-xl font-semibold transition-colors duration-300 group-hover:text-white">
+                  <p className="text-navy text-lg md:text-xl font-semibold transition-colors duration-300 group-hover:text-white">
                     {exp.company}
                   </p>
                   <p className="text-sm text-gray-600 transition-colors duration-300 group-hover:text-white">
@@ -52,7 +52,7 @@ function WorkExperience() {
                   <img
                     src={exp.icon}
                     alt={exp.company}
-                    className={`w-16 ${
+                    className={`w-12 md:w-16 ${
                       exp.company === "Amerck Inc." ? "rounded-full" : ""
                     }`}
                   />
@@ -63,7 +63,7 @@ function WorkExperience() {
                 {exp.responsibilities.map((resp, respIndex) => (
                   <div
                     key={respIndex}
-                    className="text-base text-blue-gray-800 transition-colors duration-300 group-hover:text-white"
+                    className="text-sm md:text-base text-blue-gray-800 transition-colors duration-300 group-hover:text-white"
                   >
                     {resp}
                   </div>
