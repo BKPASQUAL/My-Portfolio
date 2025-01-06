@@ -35,26 +35,26 @@ const experiences = [
 
 function WorkExperience() {
   return (
-    <div className="bg-bgcolour text-black px-4 md:px-16 lg:px-72 py-10 md:py-20 w-full">
-      <div className="text-3xl md:text-5xl font-extrabold text-center mb-10 md:mb-20">
+    <div className="bg-bgcolour text-black px-4 md:px-16 lg:px-72 py-10 md:py-20 w-full dark:bg-darkBg">
+      <div className="text-3xl md:text-5xl font-extrabold text-center mb-10 md:mb-20 dark:text-white">
         Work Experience
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="p-6 border bg-white border-gray-300 rounded-md shadow-md flex flex-col justify-between transition-transform duration-300 hover:bg-navy group"
+            className="p-6 border bg-white border-gray-300 rounded-md shadow-md flex flex-col justify-between transition-transform duration-300 hover:bg-navy group dark:bg-black dark:hover:bg-white"
           >
             <div>
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex justify-between items-center mb-4 ">
                 <div>
-                  <h2 className="text-xl md:text-2xl font-bold transition-colors duration-300 group-hover:text-white">
+                  <h2 className="text-xl md:text-2xl font-bold transition-colors duration-300 group-hover:text-white dark:text-white dark:group-hover:text-black">
                     {exp.title}
                   </h2>
-                  <p className="text-navy text-lg md:text-xl font-semibold transition-colors duration-300 group-hover:text-white">
+                  <p className="text-navy text-lg md:text-xl font-semibold transition-colors duration-300 group-hover:text-white dark:group-hover:text-navy">
                     {exp.company}
                   </p>
-                  <p className="text-sm text-gray-600 transition-colors duration-300 group-hover:text-white">
+                  <p className="text-sm text-gray-600 transition-colors duration-300 group-hover:text-white dark:group-hover:text-black">
                     {exp.location}
                   </p>
                 </div>
@@ -73,7 +73,7 @@ function WorkExperience() {
                 {exp.responsibilities.map((resp, respIndex) => (
                   <li
                     key={respIndex}
-                    className="text-sm md:text-sm text-blue-gray-800 transition-colors duration-300 group-hover:text-white text-justify"
+                    className="text-sm md:text-sm text-blue-gray-800 transition-colors duration-300 group-hover:text-white text-justify dark:text-darkPrimary dark:group-hover:text-black"
                   >
                     {resp}
                   </li>

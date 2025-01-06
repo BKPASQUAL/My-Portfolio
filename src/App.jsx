@@ -1,8 +1,8 @@
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-// import { Analytics } from "@vercel/analytics/react";
 import Home from "./components/pages/Home";
 import AnimatedCursor from "react-animated-cursor";
-import { useEffect, useState } from "react";
+import DarkModeToggle from "./components/common/DarkModeToggle";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +22,10 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-bgcolour text-black dark:bg-gray-900 dark:text-gray-100 min-h-screen">
+      <header className="flex  justify-end p-4">
+        <DarkModeToggle />
+      </header>
       {!isMobile && (
         <AnimatedCursor
           color="0, 0, 255"
@@ -34,8 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      {/* <Analytics /> */}
-    </>
+    </div>
   );
 }
 

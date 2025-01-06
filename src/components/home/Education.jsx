@@ -31,11 +31,11 @@ function Education() {
   ];
 
   return (
-    <div className="bg-bgcolour text-black pt-28 pb-28">
-      <div className="text-5xl font-extrabold text-center mb-20">
-        Education
+    <div className="bg-gray-100 dark:bg-gray-900 text-black dark:text-white py-28">
+      <div className="text-center mb-20">
+        <h1 className="text-5xl font-extrabold">Education</h1>
       </div>
-      <VerticalTimeline lineColor="navy"  animate={false}>
+      <VerticalTimeline lineColor="navy" animate={false}>
         {education.map((edu, index) => (
           <VerticalTimelineElement
             key={index}
@@ -62,11 +62,11 @@ function Education() {
             }
           >
             <div>
-              <h2 className="font-bold text-lg">{edu.institution}</h2>
-              {edu.town && (
-                <h3 className="text-gray-600 text-base">{edu.town}</h3>
-              )}
-              <h4 className="text-gray-700 text-sm mt-2">{edu.degree}</h4>
+              <h2 className="text-lg font-bold">{edu.institution}</h2>
+              {edu.town && <h3 className="text-base text-gray-600 ">{edu.town}</h3>}
+              <h4 className="text-sm text-gray-700  mt-2">
+                {edu.degree}
+              </h4>
             </div>
           </VerticalTimelineElement>
         ))}
