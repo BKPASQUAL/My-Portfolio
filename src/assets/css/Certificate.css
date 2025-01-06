@@ -100,6 +100,16 @@
   }
   
 
+.custom-date {
+    color: #E8F1F8; /* Replace with your desired color */
+    font-weight: bold; /* Optional for styling */
+  }
+  
+.text-custom-date {
+    @apply text-blue-gray-900 dark:text-darkPrimary font-bold; /* Adjust to your preference */
+  }
+  
+
 @media(max-width: 768px) {
     .Certificate-con {
         display: flex;

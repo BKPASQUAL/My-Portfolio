@@ -31,7 +31,7 @@ function Education() {
   ];
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 text-black dark:text-white py-28">
+    <div className="bg-gray-100 dark:bg-black text-black dark:text-white py-28">
       <div className="text-center mb-20">
         <h1 className="text-5xl font-extrabold">Education</h1>
       </div>
@@ -39,7 +39,8 @@ function Education() {
         {education.map((edu, index) => (
           <VerticalTimelineElement
             key={index}
-            contentStyle={{
+            contentStyle=
+            {{
               background: "white",
               color: "#1f2937",
               borderRadius: "0.5rem",
@@ -48,6 +49,7 @@ function Education() {
             }}
             contentArrowStyle={{ borderRight: "none" }}
             date={edu.year}
+            dateClassName="text-custom-date" 
             iconStyle={{
               background: "navy",
               color: "#fff",
