@@ -11,10 +11,10 @@ import {
 
 function HeroSection() {
   return (
-    <div className="bg-bgcolour text-black px-4 md:px-16 lg:px-72 h-screen flex flex-col-reverse lg:flex-row items-center">
+    <div className="bg-bgcolour text-black px-4 mt-8 md:px-16 lg:px-72 lg:mt-0 h-screen flex flex-col-reverse lg:flex-row items-center">
       <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 ">
-          <span className="text-black ">Hey, I'M </span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+          <span className="text-black">Hey, I'M </span>
           <span className="text-navy">Bawantha Pasqual</span>
         </h1>
 
