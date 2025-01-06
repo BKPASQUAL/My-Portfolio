@@ -41,8 +41,8 @@ const certificates = [
   
 function Certificates() {
   return (
-    <div className="bg-bgcolourtwo text-black px-6 md:px-16  py-10 md:py-16 lg:py-28 lg:px-72">
-    <div className="text-3xl md:text-5xl lg:mb-12 font-extrabold text-center">
+    <div className="bg-bgcolourtwo text-black  px-6 md:px-16  py-10 md:py-16 lg:py-28 lg:px-72">
+    <div className="text-3xl md:text-5xl mb-12 lg:mb-12 font-extrabold text-center">
     Certificates
     </div>
     <div className="Certificate-con">

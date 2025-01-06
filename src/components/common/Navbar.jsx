@@ -32,7 +32,7 @@ function Navbar() {
       {/* Mobile Menu Button */}
       <div className="flex lg:hidden">
         <button
-          className="p-2 text-black hover:text-navy"
+          className="p-2 text-navy "
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -69,6 +69,7 @@ function Navbar() {
             viewBox="0 0 24 24"
             stroke="currentColor"
             className="w-8 h-8"
+            
           >
             <path
               strokeLinecap="round"

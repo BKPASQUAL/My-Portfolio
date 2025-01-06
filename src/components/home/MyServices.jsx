@@ -80,7 +80,7 @@ function MyServices() {
             <div className="font-bold text-start mt-4 text-lg md:text-xl group-hover:text-white">
               {services[0].title}
             </div>
-            <p className="text-sm text-gray-500 text-start mt-4 group-hover:text-white">
+            <p className="text-sm text-gray-500 text-start mt-4 group-hover:text-white ">
               {services[0].description}
             </p>
           </div>

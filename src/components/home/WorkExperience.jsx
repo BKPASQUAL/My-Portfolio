@@ -8,7 +8,12 @@ const experiences = [
     company: "Amerck Inc.",
     location: "Stratford Ave, Colombo",
     responsibilities: [
-      "During my 12-week internship, I developed full-stack applications using React, Redux, RTK Query, Tailwind CSS, Node.js, Sequelize, and Express for real-time ICU patient monitoring and continuous patient assessment. I designed and implemented intuitive, responsive user interfaces and RESTful APIs, ensuring efficient back-end data management and system reliability. Collaborated with the team on UI/UX design using Figma and Miro to prototype and optimize workflows. Implemented features such as real-time patient vitals tracking, digital record-keeping, and role-based access control for secure and compliant data handling. Followed Agile methodologies using Jira for task tracking, GitLab for version control, and Confluence for team documentation, while engaging in CI/CD workflows for efficient development and deployment.",
+      " Developed user interfaces using React, Redux, RTK Query, and Tailwind CSS for real-time ICU patient monitoring",
+      " Created an intuitive and responsive front-end design for continuous patient assessment",
+      " Collaborated with the team on UI/UX design and prototyping using Figma and Miro",
+      " Contributed to back-end development for efficient data management and system reliability",
+      " Implemented real-time patient vitals tracking, digital record-keeping, and role-based access control for secure, compliant data handling",
+      " Followed Agile methodologies using Jira for task tracking, GitLab for version control, and Confluence for team documentation, while engaging in CI/CD workflows for efficient development and deployment.",
     ],
     icon: AmerctIcon,
   },
@@ -17,7 +22,12 @@ const experiences = [
     company: "Fairfast Insurance (Pvt) Ltd",
     location: "Colombo",
     responsibilities: [
-      "As a Training Network Engineer at Fairfast Insurance (Pvt) Ltd, I contributed to network operations and system optimization over a 12-week period. I gained hands-on experience with cloud-based infrastructure solutions using Microsoft Azure and AWS, configured and managed Linux and Windows servers, and oversaw firewall replacements to enhance data center security. Additionally, I developed expertise in network security protocols, system optimization practices, and corporate-level network architecture.",
+      "Contributed to network operations and infrastructure support",
+      "Assisted in maintenance and optimization of network system",
+      "Worked with Microsoft Azure and AWS for enhanced system management",
+      "Oversaw firewall replacements to improve data center security",
+      "Gained experience in cloud-based infrastructure solutions and network architecture",
+      "Developed knowledge of network security protocols and system optimization practices within a corporate setting",
     ],
     icon: FairfirstIcon,
   },
@@ -59,16 +69,16 @@ function WorkExperience() {
                 </div>
               </div>
 
-              <div className="list-disc list-inside mt-4 space-y-2">
+              <ul className="list-disc list-inside mt-4 space-y-2">
                 {exp.responsibilities.map((resp, respIndex) => (
-                  <div
+                  <li
                     key={respIndex}
-                    className="text-sm md:text-base text-blue-gray-800 transition-colors duration-300 group-hover:text-white"
+                    className="text-sm md:text-sm text-blue-gray-800 transition-colors duration-300 group-hover:text-white text-justify"
                   >
                     {resp}
-                  </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         ))}
