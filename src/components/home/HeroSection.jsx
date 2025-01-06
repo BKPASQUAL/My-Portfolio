@@ -11,7 +11,7 @@ import {
 
 function HeroSection() {
   return (
-    <div className="bg-bgcolour text-black px-4 sm:px-8 mt-20 pt-4 sm:pt-4 md:pt-4 lg:py-56 md:px-16 lg:px-72 lg:mt-0   flex flex-col-reverse lg:flex-row items-center dark:bg-darkBg">
+    <div className="bg-bgcolour text-black px-4 sm:px-8 mt-10 pt-4 sm:pt-4 md:pt-4 lg:py-56 md:px-16 lg:px-72 lg:mt-0   flex flex-col-reverse lg:flex-row items-center dark:bg-darkBg">
       {/* Left Section */}
       <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">

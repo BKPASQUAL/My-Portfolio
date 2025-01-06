@@ -21,6 +21,7 @@ function Skills() {
     { Icon: SiFigma, name: "Figma", color: "#F24E1E" },
     { Icon: SiC, name: "C", color: "#1572B6" },
     { Icon: AiOutlineApi, name: "Axios", color: "#5A9FD4" }, 
+    
   ];
 
   return (
@@ -28,7 +29,7 @@ function Skills() {
       <div className="text-3xl md:text-5xl font-extrabold text-center mb-10 md:mb-20 dark:text-white">
         My Tech Stack
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 lg:gap-10 gap-6   md:gap-10 justify-items-center">
+      <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 lg:gap-10 gap-6   md:gap-10 justify-items-center">
         {icons.map(({ Icon, name, color }, index) => (
           <div key={index} className="flex flex-col items-center">
             <Icon size={50} md:size={60} color={color} />
