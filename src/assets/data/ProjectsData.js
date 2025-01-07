@@ -109,7 +109,7 @@ const ProjectData = [
       "CSS",
       "RTK Query",
       "Node.js",
-      "Python (Machine Learning)",
+      "Python",
       "AWS",
       "Vercel",
       "Dialogflow",
@@ -157,7 +157,7 @@ const ProjectData = [
     github_fe: "https://github.com/BKPASQUAL/Car-Store-FE.git",
     github_be: "https://github.com/BKPASQUAL/Car-Store-BE.git",
     github_management: "https://github.com/BKPASQUAL/Car-Store-Management.git",
-    demo: "https://luxuryrides.vercel.app/",
+    // demo: "https://luxuryrides.vercel.app/",
   },
   {
     title: "Weddings By Sonali - Event Inventory Management System",

@@ -18,7 +18,7 @@ function DarkModeToggle() {
 
   return (
     <button
-      className="fixed bottom-4 right-4 p-3 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 dark:from-gray-700 dark:to-gray-900 text-white shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400 dark:focus:ring-gray-400 hover:scale-110 transition-all duration-300 z-50"
+      className="fixed bottom-4 right-4 p-3 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 dark:from-gray-700 dark:to-gray-900 text-white shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400 dark:focus:ring-gray-400 hover:scale-110 transition-all duration-500 z-50"
       onClick={() => setDarkMode(!darkMode)}
       title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
     >
