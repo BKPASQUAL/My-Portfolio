@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-dots li button:before {
+    @apply dark:text-white; 
+
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .slick-dots li button:before {
+      color: #000; /* Black color for light mode */
+    }
+  }
+  

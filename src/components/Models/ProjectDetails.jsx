@@ -1,28 +1,50 @@
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi"; // Import icons
+import Slider from "react-slick"; // Import the Slider component
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function ProjectDetails({ project }) {
+  // Slider settings
+  const settings = {
+    dots: true, // Show dots for navigation
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false, // Disable arrows
+  };
+
   return (
     <div className="bg-bgcolourtwo h-screen w-full p-8 overflow-y-auto dark:bg-darkBg">
       <h2 className="text-xl font-bold mb-6 mt-2 w-11/12 dark:text-white">{project.title}</h2>
-      <img
-        src={project.images[0]}
-        alt="Project detail"
-        className="w-full h-64 object-cover rounded-lg mb-6"
-      />
+
+      {/* Image Slider */}
+      <div className="mb-6">
+        <Slider {...settings}>
+          {project.images.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt={`Project detail ${index + 1}`}
+                className="w-full h-64 object-cover rounded-lg"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+
       <p className="text-base text-justify dark:text-darkPrimary">{project.description}</p>
 
       {/* Tech Stack Section */}
       <div className="mt-6">
         <h3 className="text-xl font-semibold dark:text-white">Tech Stack</h3>
-        <div className="flex flex-wrap items-center mt-2 ">
+        <div className="flex flex-wrap items-center mt-2">
           {project.stack.map((tech, index) => (
             <React.Fragment key={index}>
-              {/* Badge for each technology */}
               <span className="text-navy font-semibold text-nowrap text-base transition transform hover:scale-105">
                 {tech}
               </span>
-              {/* Separator between techs */}
               {index < project.stack.length - 1 && (
                 <span className="text-black px-1 dark:text-white">|</span>
               )}
@@ -34,7 +56,7 @@ function ProjectDetails({ project }) {
       {/* Features Section */}
       <div className="mt-6">
         <h3 className="text-xl font-semibold dark:text-white">Features</h3>
-        <ul className="list-disc pl-5 mt-2 text-base dark:text-darkPrimary" >
+        <ul className="list-disc pl-5 mt-2 text-base dark:text-darkPrimary">
           {project.features.map((feature, index) => (
             <li key={index} className="mb-2">
               {feature}
