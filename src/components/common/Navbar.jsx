@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/bk.jpg";
-import { Link } from 'react-scroll'; // Importing Link from react-scroll for smooth scrolling
+import { Link } from "react-scroll"; // Importing Link from react-scroll for smooth scrolling
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="h-20 bg-bgcolour fixed top-0 left-0 w-full shadow-md z-20 flex justify-between items-center px-4 md:px-8 dark:bg-black">
+    <div className="h-20 bg-bgcolour fixed top-0 left-0 w-full shadow-md z-20 flex justify-between items-center px-4 md:px-8 lg:px-12 dark:bg-black">
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <img
@@ -14,20 +14,30 @@ function Navbar() {
           alt="logo"
           className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover p-1"
         />
-        <h1 className="font-bold text-xl md:text-2xl">Bawantha Pasqual</h1>
+        <h1 className="font-bold text-xl md:text-2xl text-black dark:text-white">
+          Bawantha Pasqual
+        </h1>
       </div>
 
       {/* Desktop Navigation */}
       <div className="hidden lg:flex space-x-6 justify-center text-sm md:text-lg">
-        {["About", "Skills", "Expertise", "Projects", "Work", "Education", "Certificates"].map((link) => (
+        {[
+          "About",
+          "Skills",
+          "Expertise",
+          "Projects",
+          "Work",
+          "Education",
+          "Certificates",
+        ].map((link) => (
           <Link
             key={link}
             to={link.toLowerCase()} // This is the section id you want to scroll to
-            smooth={true}  // Enables smooth scrolling
+            smooth={true} // Enables smooth scrolling
             duration={500} // Sets the duration for smooth scrolling
             className="relative group cursor-pointer hover:text-navy"
-            activeClass="font-bold text-navy     " // Apply active class when this section is in view
-            spy={true}  // This enables the activeClass functionality
+            activeClass="font-bold text-navy" // Apply active class when this section is in view
+            spy={true} // This enables the activeClass functionality
             offset={-100} // This is to adjust the offset so that the nav link gets active a bit before the section is at the top
           >
             {link}
@@ -53,7 +63,9 @@ function Navbar() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
         </button>
@@ -87,17 +99,25 @@ function Navbar() {
         </button>
 
         {/* Menu Links */}
-        {["About", "Skills", "Expertise", "Projects", "Work", "Education", "Certificates"].map((link) => (
+        {[
+          "About",
+          "Skills",
+          "Expertise",
+          "Projects",
+          "Work",
+          "Education",
+          "Certificates",
+        ].map((link) => (
           <Link
             key={link}
             to={link.toLowerCase()}
             smooth={true}
             duration={500}
-            onClick={() => setIsMenuOpen(false)} // Close the menu when an item is clicked
+            onClick={() => setIsMenuOpen(false)} 
             className="cursor-pointer text-lg font-semibold hover:text-gray-400"
-            activeClass="font-bold text-navy" // Active class for mobile menu
-            spy={true}  // Enables active class on scroll
-            offset={-100} // Similar offset adjustment as for desktop
+            activeClass="font-bold text-navy" 
+            spy={true} 
+            offset={-100} 
           >
             {link}
           </Link>
@@ -105,25 +125,62 @@ function Navbar() {
 
         {/* Social Links */}
         <div className="flex flex-col items-center gap-6 mt-4">
-          {["LinkedIn", "GitHub", "Resume"].map((link) => (
-            <p
-              key={link}
-              className="cursor-pointer text-lg font-semibold hover:text-gray-400"
-              onClick={() => setIsMenuOpen(false)} // Close menu on click
-            >
-              {link}
-            </p>
-          ))}
+          {/* Social media links */}
+          <a
+            href="https://www.linkedin.com/in/bawanthapasqual"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer text-lg font-semibold hover:text-navy"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/BKPASQUAL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer text-lg font-semibold hover:text-navy"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://resume.com" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer text-lg font-semibold text-navy hover:text-gray-400 flex items-center"
+          >
+            Resume
+            <span className="material-symbols-outlined ml-2">open_in_new</span> 
+          </a>
         </div>
       </div>
 
       {/* Desktop Links (Right Side) */}
       <div className="hidden lg:flex gap-x-4 justify-end font-semibold text-sm md:text-lg">
-        {["LinkedIn", "GitHub", "Resume"].map((link) => (
-          <p key={link} className="cursor-pointer hover:text-navy">
-            {link}
-          </p>
-        ))}
+        <a
+          href="https://www.linkedin.com/in/bawanthapasqual"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer hover:text-navy w-1/3"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/BKPASQUAL"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer hover:text-navy "
+        >
+          GitHub
+        </a>
+        <a
+        href="/BawanthaPasqualCVResume.pdf" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer text-navy hover:text-navy hover:font-extrabold flex items-center "
+        >
+          Resume
+          <span className="material-symbols-outlined ml-2">open_in_new</span> 
+        </a>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import WorkExperience from "../home/WorkExperience";
 import Education from "../home/Education";
 import MyServices from "../home/MyServices";
 import Certificates from "../home/Certificates";
+import Footer from "../common/Footer";
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function Home() {
       <section id="certificates">
         <Certificates />
       </section>
+      <Footer/>
     </div>
   );
 }
