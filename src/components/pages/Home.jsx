@@ -12,13 +12,27 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <HeroSection />
-      <Skills />
-      <MyServices/>
-      <Projects />
-      <WorkExperience />
-      <Education />
-      <Certificates/>
+      <section id="about">
+        <HeroSection />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="expertise">
+        <MyServices />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="work">
+        <WorkExperience />
+      </section>
+      <section id="education">
+        <Education />
+      </section>
+      <section id="certificates">
+        <Certificates />
+      </section>
     </div>
   );
 }

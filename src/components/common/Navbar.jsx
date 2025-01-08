@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/bk.jpg";
+import { Link } from 'react-scroll'; // Importing Link from react-scroll for smooth scrolling
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="h-20 bg-bgcolour fixed top-0 left-0 w-full shadow-md z-20 flex justify-between items-center px-4 md:px-8 dark:bg-black ">
+    <div className="h-20 bg-bgcolour fixed top-0 left-0 w-full shadow-md z-20 flex justify-between items-center px-4 md:px-8 dark:bg-black">
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <img
@@ -17,22 +18,28 @@ function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex space-x-6 justify-center font-semibold text-sm md:text-lg">
-        {["About", "Skills", "Projects", "Work", "Education", "Certificates"].map((link) => (
-          <p
+      <div className="hidden lg:flex space-x-6 justify-center text-sm md:text-lg">
+        {["About", "Skills", "Expertise", "Projects", "Work", "Education", "Certificates"].map((link) => (
+          <Link
             key={link}
+            to={link.toLowerCase()} // This is the section id you want to scroll to
+            smooth={true}  // Enables smooth scrolling
+            duration={500} // Sets the duration for smooth scrolling
             className="relative group cursor-pointer hover:text-navy"
+            activeClass="font-bold text-navy     " // Apply active class when this section is in view
+            spy={true}  // This enables the activeClass functionality
+            offset={-100} // This is to adjust the offset so that the nav link gets active a bit before the section is at the top
           >
             {link}
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-navy transition-all duration-300 group-hover:w-full"></span>
-          </p>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-navy font-semibold transition-all duration-300 group-hover:w-full"></span>
+          </Link>
         ))}
       </div>
 
       {/* Mobile Menu Button */}
       <div className="flex lg:hidden">
         <button
-          className="p-2 text-navy "
+          className="p-2 text-navy"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -69,7 +76,6 @@ function Navbar() {
             viewBox="0 0 24 24"
             stroke="currentColor"
             className="w-8 h-8"
-            
           >
             <path
               strokeLinecap="round"
@@ -81,14 +87,20 @@ function Navbar() {
         </button>
 
         {/* Menu Links */}
-        {["About", "Skills", "Projects", "Work", "Education", "Certificates"].map((link) => (
-          <p
+        {["About", "Skills", "Expertise", "Projects", "Work", "Education", "Certificates"].map((link) => (
+          <Link
             key={link}
+            to={link.toLowerCase()}
+            smooth={true}
+            duration={500}
+            onClick={() => setIsMenuOpen(false)} // Close the menu when an item is clicked
             className="cursor-pointer text-lg font-semibold hover:text-gray-400"
-            onClick={() => setIsMenuOpen(false)} // Close menu on click
+            activeClass="font-bold text-navy" // Active class for mobile menu
+            spy={true}  // Enables active class on scroll
+            offset={-100} // Similar offset adjustment as for desktop
           >
             {link}
-          </p>
+          </Link>
         ))}
 
         {/* Social Links */}

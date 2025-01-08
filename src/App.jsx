@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import AnimatedCursor from "react-animated-cursor";
 import DarkModeToggle from "./components/common/DarkModeToggle";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -21,6 +22,8 @@ function App() {
     };
   }, []);
 
+  
+
   return (
     <div className="bg-bgcolour text-black dark:bg-gray-900 dark:text-gray-100 min-h-screen">
       <header className="flex  justify-end p-4">
@@ -37,8 +40,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Analytics />
     </div>
   );
 }
 
 export default App;
+
