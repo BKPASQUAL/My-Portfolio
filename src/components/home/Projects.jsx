@@ -57,7 +57,7 @@ function Projects() {
 
       {/* Slide-in ProjectDetails */}
       <div
-        className={`fixed top-0 right-0 h-screen w-full sm:w-1/3 bg-white shadow-xl z-50 transition-transform duration-500  ${
+        className={`fixed top-0 right-0 h-screen w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5 bg-white shadow-xl z-50 transition-transform duration-500  ${
           selectedProject ? "translate-x-0" : "translate-x-full"
         }`}
       >

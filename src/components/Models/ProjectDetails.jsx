@@ -10,12 +10,12 @@ function ProjectDetails({ project }) {
         alt="Project detail"
         className="w-full h-64 object-cover rounded-lg mb-6"
       />
-      <p className="text-lg text-justify dark:text-darkPrimary">{project.shortDescription}</p>
+      <p className="text-base text-justify dark:text-darkPrimary">{project.description}</p>
 
       {/* Tech Stack Section */}
       <div className="mt-6">
         <h3 className="text-xl font-semibold dark:text-white">Tech Stack</h3>
-        <div className="flex flex-wrap items-center mt-2">
+        <div className="flex flex-wrap items-center mt-2 ">
           {project.stack.map((tech, index) => (
             <React.Fragment key={index}>
               {/* Badge for each technology */}
@@ -34,7 +34,7 @@ function ProjectDetails({ project }) {
       {/* Features Section */}
       <div className="mt-6">
         <h3 className="text-xl font-semibold dark:text-white">Features</h3>
-        <ul className="list-disc pl-5 mt-2 text-lg dark:text-darkPrimary">
+        <ul className="list-disc pl-5 mt-2 text-base dark:text-darkPrimary" >
           {project.features.map((feature, index) => (
             <li key={index} className="mb-2">
               {feature}

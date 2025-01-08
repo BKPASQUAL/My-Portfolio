@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/bk.jpg";
-import { Link } from "react-scroll"; // Importing Link from react-scroll for smooth scrolling
+import { Link } from "react-scroll"; 
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="h-20 bg-bgcolour fixed top-0 left-0 w-full shadow-md z-20 flex justify-between items-center px-4 md:px-8 lg:px-12 dark:bg-black">
-      {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <img
           src={logo}
@@ -19,7 +18,6 @@ function Navbar() {
         </h1>
       </div>
 
-      {/* Desktop Navigation */}
       <div className="hidden lg:flex space-x-6 justify-center text-sm md:text-lg">
         {[
           "About",
@@ -32,13 +30,13 @@ function Navbar() {
         ].map((link) => (
           <Link
             key={link}
-            to={link.toLowerCase()} // This is the section id you want to scroll to
-            smooth={true} // Enables smooth scrolling
-            duration={500} // Sets the duration for smooth scrolling
+            to={link.toLowerCase()} 
+            smooth={true} 
+            duration={500} 
             className="relative group cursor-pointer hover:text-navy"
-            activeClass="font-bold text-navy" // Apply active class when this section is in view
-            spy={true} // This enables the activeClass functionality
-            offset={-100} // This is to adjust the offset so that the nav link gets active a bit before the section is at the top
+            activeClass="font-bold text-navy" 
+            spy={true} 
+            offset={-100} 
           >
             {link}
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-navy font-semibold transition-all duration-300 group-hover:w-full"></span>
@@ -46,7 +44,6 @@ function Navbar() {
         ))}
       </div>
 
-      {/* Mobile Menu Button */}
       <div className="flex lg:hidden">
         <button
           className="p-2 text-navy"
@@ -71,13 +68,11 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu with Transparent Background */}
       <div
         className={`fixed top-0 left-0 w-full h-screen bg-black text bg-opacity-80 backdrop-blur-md text-white justify-center shadow-md transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } lg:hidden flex flex-col items-center space-y-4 py-10 z-50`}
       >
-        {/* Close Button */}
         <button
           className="absolute top-5 right-5 text-white hover:text-gray-400"
           onClick={() => setIsMenuOpen(false)}
@@ -98,7 +93,6 @@ function Navbar() {
           </svg>
         </button>
 
-        {/* Menu Links */}
         {[
           "About",
           "Skills",
@@ -123,9 +117,7 @@ function Navbar() {
           </Link>
         ))}
 
-        {/* Social Links */}
         <div className="flex flex-col items-center gap-6 mt-4">
-          {/* Social media links */}
           <a
             href="https://www.linkedin.com/in/bawanthapasqual"
             target="_blank"
@@ -154,7 +146,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Desktop Links (Right Side) */}
       <div className="hidden lg:flex gap-x-4 justify-end font-semibold text-sm md:text-lg">
         <a
           href="https://www.linkedin.com/in/bawanthapasqual"
