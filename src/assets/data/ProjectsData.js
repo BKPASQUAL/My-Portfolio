@@ -321,7 +321,7 @@ const ProjectData = [
     shortDescription:
       "A full-stack platform for managing products and sales with a powerful dashboard and analytics.",
     description:
-      "The E-Commerce Site Management is a self-learning project built with the MERN stack. It allows admins to manage products by adding, editing, updating, and deleting them. The app features a dashboard that provides insights into total users, total items, and total customers, along with product analytics visualized using Apex Charts. The project focuses on creating a seamless admin experience with responsive UI and efficient product management.",
+      "The E-Commerce Site Management is a self-learning project built with the MERN stack. It allows admins to manage products by adding, editing, updating, and deleting them. The app features a dashboard that provides insights into total users, total items, and total customers, along with product analytics visualized using Apex Charts. The project focuses on creating a seamless admin experience with responsive UI and efficient product management.\n\nLogin Credentials:\nEmail: admin@gmail.com\nPassword: 000000",
     stack: [
       "React.js",
       "Node.js",
@@ -342,9 +342,11 @@ const ProjectData = [
       "Charts and data visualization using Apex Charts",
     ],
     images: [emang1, emang2, emang3, emang4],
-    github_fe: "https://github.com/BKPASQUAL/E-Commerce-Site.git",
-    demo: "https://e-commerce-site-rho-five.vercel.app/",
+    github_fe: "https://github.com/BKPASQUAL/E-Commerce-Management-FE.git",
+    github_be: "https://github.com/BKPASQUAL/E-Commerce-Management-BE.git",
+    demo: "https://e-commerce-management-fe.vercel.app/",
   }
+  
   
 ];
 
