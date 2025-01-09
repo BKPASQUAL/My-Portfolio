@@ -53,7 +53,11 @@ import resep2 from "../images/RecepeApp/resep2.png";
 import resep3 from "../images/RecepeApp/resep3.png";
 import resep4 from "../images/RecepeApp/resep4.png";
 
-
+import ecorm1 from "../images/e-cormerce/e-corm1.png";
+import ecorm2 from "../images/e-cormerce/e-corm2.png";
+import ecorm3 from "../images/e-cormerce/e-corm3.png";
+import ecorm4 from "../images/e-cormerce/e-corm4.png";
+import ecorm5 from "../images/e-cormerce/e-corm5.png";
 
 const ProjectData = [
   {
@@ -286,8 +290,26 @@ const ProjectData = [
     images: [resep1, resep2, resep3, resep4],
     github_fe: "https://github.com/BKPASQUAL/RecipeApp_FE.git",
     github_be: "https://github.com/BKPASQUAL/RecipeApp_BE.git",
-    demo:"https://recipe-app-fe-gilt.vercel.app/",
-    
+    demo: "https://recipe-app-fe-gilt.vercel.app/",
+  },
+  {
+    title: "E-Commerce Site (Shoes Shop)",
+    shortDescription:
+      "A platform for discovering and purchasing shoes, with a cart feature and user session management.",
+    description:
+      "The E-Commerce Shoes Shop is a self-learning project where users can browse various shoes, add them to their cart, and manage their shopping experience. The app uses React.js for the front-end development and Context API for state management. The user can view available shoes, select items, and add them to the shopping cart. This project focuses on building a smooth shopping experience with personalized cart management features.",
+    stack: ["React.js", "Context API", "Tailwind CSS", "MUI"],
+    features: [
+      "Browse a variety of shoes",
+      "Search shoes by name",
+      "Filter shoes by category",
+      "Add shoes to the shopping cart",
+      "View cart and manage selected items",
+      "Responsive and user-friendly UI",
+    ],
+    images: [ecorm1, ecorm2, ecorm3, ecorm4, ecorm5],
+    github_fe: "https://github.com/BKPASQUAL/E-Commerce-Site.git",
+    demo: "https://e-commerce-site-rho-five.vercel.app/",
   },
 ];
 
