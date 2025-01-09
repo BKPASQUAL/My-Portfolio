@@ -11,7 +11,7 @@ import {
 
 function HeroSection() {
   return (
-    <div className="bg-bgcolour text-black px-4 sm:px-8 mt-10 pt-4 sm:pt-4 md:pt-4 lg:py-56 md:px-16 lg:px-72 lg:mt-0   flex flex-col-reverse lg:flex-row items-center dark:bg-darkBg">
+    <div className="bg-bgcolour text-black px-4 sm:px-8 mt-10 pt-4 sm:pt-4 md:pt-4 lg:py-56 md:px-16 lg:px-72 lg:mt-0 flex flex-col-reverse lg:flex-row items-center dark:bg-darkBg">
       {/* Left Section */}
       <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">
@@ -33,16 +33,23 @@ function HeroSection() {
         </p>
 
         <div className="flex space-x-3 sm:space-x-4 md:space-x-6">
-          <button
-            className="flex items-center bg-white p-2 sm:p-3 md:p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
+          <a
+            href="https://www.linkedin.com/in/bawanthapasqual"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-white p-2 sm:p-3 md:p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group "
             title="LinkedIn"
           >
             <FaLinkedin
               size={24}
               className="transition-colors duration-250 text-[#0A66C2] group-hover:text-white"
             />
-          </button>
-          <button
+          </a>
+
+          <a
+            href="https://github.com/BKPASQUAL"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center bg-white p-2 sm:p-3 md:p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
             title="GitHub"
           >
@@ -50,8 +57,12 @@ function HeroSection() {
               size={24}
               className="transition-colors duration-250 text-[#171515] group-hover:text-white"
             />
-          </button>
-          <button
+          </a>
+
+         
+
+          <a
+            href="mailto:bawanthapasqual@gmail.com" 
             className="flex items-center bg-white p-2 sm:p-3 md:p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
             title="Email"
           >
@@ -59,8 +70,12 @@ function HeroSection() {
               size={24}
               className="transition-colors duration-250 text-[#D44638] group-hover:text-white"
             />
-          </button>
-          <button
+          </a>
+
+          <a
+            href="https://wa.me/+94770370370" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center bg-white p-2 sm:p-3 md:p-4 shadow border-blue-gray-50 rounded-md cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 hover:bg-navy group"
             title="WhatsApp"
           >
@@ -68,7 +83,7 @@ function HeroSection() {
               size={24}
               className="transition-colors duration-250 text-[#25D366] group-hover:text-white"
             />
-          </button>
+          </a>
         </div>
       </div>
 
