@@ -48,6 +48,13 @@ import vital4 from "../images/vitalWatch/vital4.png";
 import vital5 from "../images/vitalWatch/vital5.png";
 import vital6 from "../images/vitalWatch/vital6.png";
 
+import resep1 from "../images/RecepeApp/resep1.png";
+import resep2 from "../images/RecepeApp/resep2.png";
+import resep3 from "../images/RecepeApp/resep3.png";
+import resep4 from "../images/RecepeApp/resep4.png";
+
+
+
 const ProjectData = [
   {
     title: "Medisense Laboratory Pvt Ltd",
@@ -253,6 +260,34 @@ const ProjectData = [
     images: [ch1, ch2, ch3, ch4],
     github_fe: "https://github.com/BKPASQUAL/Champika-Hardware-FE.git",
     // github_be: "https://github.com/YourRepo/ChampikaHardware_BE",
+  },
+
+  {
+    title: "Recipe App",
+    shortDescription:
+      "A platform for discovering and saving favorite recipes, with user account management and protected routes.",
+    description:
+      "The Recipe App is a self-learning project designed to help users discover and save their favorite recipes. It integrates OpenAPI to fetch a variety of recipes and allows users to create accounts, add recipes to their favorites, and remove them when desired. The app also includes protected routes using context for managing user sessions. This project focuses on developing a robust front-end with React and implementing user authentication features to provide a personalized experience.",
+    stack: [
+      "React",
+      "Context API",
+      "Node.js",
+      "OpenAPI",
+      "Tailwind CSS",
+      "MUI",
+    ],
+    features: [
+      "Fetch recipes from OpenAPI Data set",
+      "User account creation and login",
+      "Add and remove recipes from favorites",
+      "Protected routes for authenticated users",
+      "Personalized recipe management",
+    ],
+    images: [resep1, resep2, resep3, resep4],
+    github_fe: "https://github.com/BKPASQUAL/RecipeApp_FE.git",
+    github_be: "https://github.com/BKPASQUAL/RecipeApp_BE.git",
+    demo:"https://recipe-app-fe-gilt.vercel.app/",
+    
   },
 ];
 
