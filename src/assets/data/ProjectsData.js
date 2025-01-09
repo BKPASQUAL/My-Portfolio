@@ -59,6 +59,11 @@ import ecorm3 from "../images/e-cormerce/e-corm3.png";
 import ecorm4 from "../images/e-cormerce/e-corm4.png";
 import ecorm5 from "../images/e-cormerce/e-corm5.png";
 
+import emang1 from "../images/e-corm-management/e-mang1.png";
+import emang2 from "../images/e-corm-management/e-mang2.png";
+import emang3 from "../images/e-corm-management/e-mang3.png";
+import emang4 from "../images/e-corm-management/e-mang4.png";
+
 const ProjectData = [
   {
     title: "Medisense Laboratory Pvt Ltd",
@@ -237,34 +242,34 @@ const ProjectData = [
     github_fe: "https://github.com/BKPASQUAL/vitalwatchFE.git",
     github_be: "https://github.com/AnukaFonseka/vital_watch_be.git",
   },
-  {
-    title: "Champika Hardware - Retail & Inventory Management System",
-    shortDescription:
-      "A platform for managing hardware distribution, retail operations, and inventory management.",
-    description:
-      "Champika Hardware is an ongoing project designed for managing hardware distribution and retail operations. It includes a comprehensive inventory system to handle stock management, customer records, supplier relationships, and billing processes. With a centralized database, the platform helps streamline inventory, billing, and data maintenance, enhancing efficiency for both wholesale and retail activities.",
-    stack: [
-      "React",
-      "RTK Query",
-      "Node.js",
-      "Sequelize",
-      "Express",
-      "Tailwind CSS",
-      "Figma",
-      "MUI",
-      "RSuite",
-    ],
-    features: [
-      "Inventory management for hardware items",
-      "Billing and receipt generation",
-      "Customer and supplier management",
-      "Database maintenance for customer and supplier records",
-      "Centralized system for efficient retail and distribution operations",
-    ],
-    images: [ch1, ch2, ch3, ch4],
-    github_fe: "https://github.com/BKPASQUAL/Champika-Hardware-FE.git",
-    // github_be: "https://github.com/YourRepo/ChampikaHardware_BE",
-  },
+  // {
+  //   title: "Champika Hardware - Retail & Inventory Management System",
+  //   shortDescription:
+  //     "A platform for managing hardware distribution, retail operations, and inventory management.",
+  //   description:
+  //     "Champika Hardware is an ongoing project designed for managing hardware distribution and retail operations. It includes a comprehensive inventory system to handle stock management, customer records, supplier relationships, and billing processes. With a centralized database, the platform helps streamline inventory, billing, and data maintenance, enhancing efficiency for both wholesale and retail activities.",
+  //   stack: [
+  //     "React",
+  //     "RTK Query",
+  //     "Node.js",
+  //     "Sequelize",
+  //     "Express",
+  //     "Tailwind CSS",
+  //     "Figma",
+  //     "MUI",
+  //     "RSuite",
+  //   ],
+  //   features: [
+  //     "Inventory management for hardware items",
+  //     "Billing and receipt generation",
+  //     "Customer and supplier management",
+  //     "Database maintenance for customer and supplier records",
+  //     "Centralized system for efficient retail and distribution operations",
+  //   ],
+  //   images: [ch1, ch2, ch3, ch4],
+  //   github_fe: "https://github.com/BKPASQUAL/Champika-Hardware-FE.git",
+  //   github_be: "https://github.com/YourRepo/ChampikaHardware_BE",
+  // },
 
   {
     title: "Recipe App",
@@ -311,6 +316,36 @@ const ProjectData = [
     github_fe: "https://github.com/BKPASQUAL/E-Commerce-Site.git",
     demo: "https://e-commerce-site-rho-five.vercel.app/",
   },
+  {
+    title: "E-Commerce Site Management",
+    shortDescription:
+      "A full-stack platform for managing products and sales with a powerful dashboard and analytics.",
+    description:
+      "The E-Commerce Site Management is a self-learning project built with the MERN stack. It allows admins to manage products by adding, editing, updating, and deleting them. The app features a dashboard that provides insights into total users, total items, and total customers, along with product analytics visualized using Apex Charts. The project focuses on creating a seamless admin experience with responsive UI and efficient product management.",
+    stack: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Context API",
+      "Apex Charts",
+      "Tailwind CSS",
+      "MUI",
+      "RSuite",
+    ],
+    features: [
+      "Admin dashboard with analytics",
+      "Add, edit, update, and delete products",
+      "Display total users, items, and customers",
+      "Product quantity and pricing insights",
+      "Responsive and user-friendly UI",
+      "Charts and data visualization using Apex Charts",
+    ],
+    images: [emang1, emang2, emang3, emang4],
+    github_fe: "https://github.com/BKPASQUAL/E-Commerce-Site.git",
+    demo: "https://e-commerce-site-rho-five.vercel.app/",
+  }
+  
 ];
 
 export default ProjectData;
